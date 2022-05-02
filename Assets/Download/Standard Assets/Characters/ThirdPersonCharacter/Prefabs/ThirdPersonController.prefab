@@ -764,6 +764,8 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -775,6 +777,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1467,6 +1470,8 @@ GameObject:
   m_Component:
   - component: {fileID: 408730}
   - component: {fileID: 9579096}
+  - component: {fileID: 6671329401405286215}
+  - component: {fileID: 1633935573820919714}
   - component: {fileID: 5426510}
   - component: {fileID: 13615390}
   - component: {fileID: 11444856}
@@ -1514,6 +1519,44 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6671329401405286215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e601a33536a75c4291b9490ba2e853d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  killForce: 5
+--- !u!114 &1633935573820919714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149790}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de25b5d8ea4cea94580cf60480ac8417, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handObject: {fileID: 0}
+  lookObject: {fileID: 0}
+  animator: {fileID: 0}
+  rightHandWeight: 0
+  leftFootWeight: 0
+  leftHandWeight: 0
+  leftLowerLeg: {fileID: 0}
+  leftFood: {fileID: 0}
+  Mask:
+    serializedVersion: 2
+    m_Bits: 0
+  leftFoodPosition: {x: 0, y: 0, z: 0}
+  leftFoodRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!54 &5426510
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1682,6 +1725,8 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1693,6 +1738,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0

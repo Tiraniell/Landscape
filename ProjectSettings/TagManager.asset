@@ -13,14 +13,15 @@ TagManager:
   - Generator
   - SpotLight
   - AI
+  - Fire
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - IK
   - Water
   - UI
-  - 
+  - Box
   - 
   - Lamps
   - Support
